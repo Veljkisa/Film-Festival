@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ghibli Outdoor Film Festival</title>
+	<link rel="icon" href="icon.ico">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">	<link rel="stylesheet" type="text/css" href="css.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- social media icons -->
+</head>
+<body>
+
+<nav style="background-color: #2e279d;" class="col navbar navbar-expand-lg">
+		<a class="navbar-brand" href="index.html">
+			<img src="logo.png" alt="Ghibli Outdoor Film Festival" width="50" height="50" style="border:0px rounded ">
+			
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="navbarContent" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="schedule.html">Schedule</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="register.html">Register</a>
+			</ul>
+		</div>
+</nav>
+<br>
+
+<div class="map">
+	<div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;">
+		<iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://maps.google.com/maps?q=Boston%20Public%20Garden&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+	</div>
+</div>
+
+<br>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">August 5th</th>
+      <th scope="col">August 6th</th>
+      <th scope="col">August 7th</th>
+      <th scope="col">August 8th</th>
+    </tr>
+  </thead>
+  
+  
+  <tbody>
+    <tr>
+      <td> 
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgpeti1">Spirited Away</a></strong>  <em>18:00-20:10</em>
+		</div>
+	  </td>
+      <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgsesti1">Princess Mononoke</a></strong>  <em>18:00-20:15</em>
+		</div>
+	  </td>
+      <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgsedmi1">Howl's Moving Castle</a></strong>  <em>18:00-20:00</em>
+		</div>
+	  </td>
+	  <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgosmi1">My Neighbor Totoro</a></strong> <em>18:00-19:30</em>
+		</div>			
+	  </td>
+    </tr>
+    <tr>
+      <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgpeti2">The Secret World of Arrietty</a></strong> <em>20:30-22:15</em>
+		</div>
+	  </td>
+      <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgsesti2">Kiki's Delivery Service</a></strong> <em>20:30-22:15</em>
+		</div>
+	  </td>
+      <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgsedmi2">Whisper of The Heart</a></strong> <em>20:20-22:10</em>
+		</div>
+	  </td>
+	  <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgosmi2">The Tale of Princess Kaguya</a></strong> <em>19:50-22:10</em>
+		</div>			
+	  </td>
+    </tr>
+    <tr>
+      <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgpeti3">Grave of The Fireflies</a></strong> <em>22:20-00:00</em>
+		</div>
+	  </td>
+      <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgsesti3">The Cat Returns</a></strong> <em>22:40-00:00</em>
+		</div>
+	  </td>
+	  <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgsedmi3">The Wind Rises</a></strong> <em>22:30-00:30</em>
+		</div>			
+	  </td>
+	  <td>
+		<div class="film">
+			<strong><a data-toggle="modal" data-target="#avgosmi3">When Marnie Was There</a></strong> <em>22:30-00:10</em>
+		</div>			
+	  </td>
+    </tr>
+	
+  </tbody>
+</table>
+
+
+<!-- Modal -->
+<div class="modal fade" id="avgpeti1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Spirited Away (2001)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/199/Sen_to_Chihiro_no_Kamikakushi">MAL score: 8.84</a> <a href="https://www.imdb.com/title/tt0245429/">IMDb score: 8.6</a></em></div>
+
+      </div>
+      <div class="modal-body">
+			During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/ByXuk9QqQkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="avgpeti2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Secret World of Arrietty (2010)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/7711/Karigurashi_no_Arrietty">MAL score: 7.97</a> <a href="https://www.imdb.com/title/tt1568921/?ref_=nv_sr_srsg_0">IMDb score: 7.6</a></em></div>
+      </div>
+      <div class="modal-body">
+			The Clock family are four-inch-tall people who live anonymously in another family's residence, borrowing simple items to make their home. Life changes for the Clocks when their teenage daughter, Arrietty, is discovered.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/QfkrMq2G71g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="avgpeti3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Grave of the Fireflies (1988)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/578/Hotaru_no_Haka">MAL score: 8.51</a> <a href="https://www.imdb.com/title/tt0095327/?ref_=nv_sr_srsg_0">IMDb score: 8.5</a></em></div>
+
+      </div>
+      <div class="modal-body">
+			A young boy and his little sister struggle to survive in Japan during World War II.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/4vPeTSRd580" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+
+
+
+<div class="modal fade" id="avgsesti1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Princess Mononoke (1997)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/164/Mononoke_Hime">MAL score: 8.73</a> <a href="https://www.imdb.com/title/tt0119698/?ref_=nv_sr_srsg_0">IMDb score: 8.4</a></em></div>
+
+      </div>
+      <div class="modal-body">
+			On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/4OiMOHRDs14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="avgsesti2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Kiki's Delivery Service</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/512/Majo_no_Takkyuubin">MAL score: 8.25</a> <a href="https://www.imdb.com/title/tt0097814/?ref_=nv_sr_srsg_0">IMDb score: 7.8</a></em></div>
+      </div>
+      <div class="modal-body">
+			A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/QfkrMq2G71g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="avgsesti3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Cat Returns (2002)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/597/Neko_no_Ongaeshi">MAL score: 7.82</a> <a href="https://www.imdb.com/title/tt0347618/?ref_=nv_sr_srsg_0">IMDb score: 7.2</a></em></div>
+
+      </div>
+      <div class="modal-body">
+			After helping a cat, a seventeen-year-old girl finds herself involuntarily engaged to a cat Prince in a magical world where her only hope of freedom lies with a dapper cat statuette come to life.
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/Gp-H_YOcYTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="avgsedmi1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Howl's Moving Castle (2004)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/431/Howl_no_Ugoku_Shiro">MAL score: 8.67</a> <a href="https://www.imdb.com/title/tt0347149/?ref_=nv_sr_srsg_0">IMDb score: 8.2</a></em></div>
+
+      </div>
+      <div class="modal-body">
+			When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/iwROgK94zcM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="avgsedmi2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Whisper of The Heart (1995)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/585/Mimi_wo_Sumaseba">MAL score: 8.24</a> <a href="https://www.imdb.com/title/tt0113824/?ref_=nv_sr_srsg_0">IMDb score: 7.9</a></em></div>
+      </div>
+      <div class="modal-body">
+			A love story between a girl who loves reading books, and a boy who has previously checked out all of the library books she chooses.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/0pVkiod6V0U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="avgsedmi3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Wind Rises (2013)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/16662/Kaze_Tachinu">MAL score: 8.14</a> <a href="https://www.imdb.com/title/tt2013293/?ref_=nv_sr_srsg_0">IMDb score: 7.8</a></em></div>
+
+      </div>
+      <div class="modal-body">
+			A look at the life of Jiro Horikoshi, the man who designed Japanese fighter planes during World War II.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/RzSpDgiF5y8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+	  <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="avgosmi1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">My Neighbor Totoro (1988)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/523/Tonari_no_Totoro">MAL score: 8.34</a> <a href="https://myanimelist.net/anime/523/Tonari_no_Totoro">IMDb score: 8.2</a></em></div>
+
+      </div>
+      <div class="modal-body">
+			When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/92a7Hj0ijLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="avgosmi2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Tale of the Princess Kaguya (2013)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/16664/Kaguya-hime_no_Monogatari">MAL score: 8.24</a> <a href="https://www.imdb.com/title/tt2576852/?ref_=nv_sr_srsg_2">IMDb score: 7.7</a></em></div>
+      </div>
+      <div class="modal-body">
+			Found inside a shining stalk of bamboo by an old bamboo cutter and his wife, a tiny girl grows rapidly into an exquisite young lady. The mysterious young princess enthralls all who encounter her, but ultimately she must confront her fate, the punishment for her crime.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/W71mtorCZDw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="avgosmi3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">When Marnie Was There (2014)</h5>
+		<div class="score"><em style="text-align:right;"><a href="https://myanimelist.net/anime/21557/Omoide_no_Marnie">MAL score: 8.13</a> <a href="https://www.imdb.com/title/tt3398268/?ref_=nv_sr_srsg_0">IMDb score: 7.7</a></em></div>
+
+      </div>
+      <div class="modal-body">
+			Due to 12 y.o. Anna's asthma, she's sent to stay with relatives of her guardian in the Japanese countryside. She likes to be alone, sketching. She befriends Marnie. Who is the mysterious, blonde Marnie.
+			<iframe width="100%" height="350" src="https://www.youtube.com/embed/jjmrxqcQdYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container-fluid" style="background-color: #ffffff;">
+		<div class="row" >
+			<div class="col-lg-6">
+			</div>
+			<div class="col-lg-6">
+			</div>
+		</div>
+	</div>
+					<a class="weatherwidget-io" href="https://forecast7.com/en/42d36n71d06/boston/" data-label_1="BOSTON" data-label_2="WEATHER" data-theme="original" >BOSTON WEATHER</a>
+			<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+			</script>
+	
+	
+    <footer>
+		<div class="footer_img">
+			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/home" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+		</div>
+    </footer>
+
+</body>
+
+</html>
